@@ -1,0 +1,72 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    background-color: aqua;
+    height: 100px;
+    display: flex;
+}
+header #logo
+{
+    width: 20%;
+    height: 100px;
+    background-color: chartreuse;
+}
+header #links
+{ 
+    width: 80%;
+    height: 100px;
+    background-color: black;
+}
+header #li1
+{
+    background-color: aqua;
+    height: 50px;
+}
+header #li2
+{
+    background-color: coral;
+    height: 50px;
+}
+nav
+{
+    background-color: blue;
+    height: 100px;
+}
+.section
+{
+    background-color: red;
+    height: 400px;
+    display: flex;
+}
+section #aside
+{
+    background-color: aqua;
+    width: 20%;
+}
+section #artical
+{
+    background-color: pink;
+    width: 80%;
+    
+}
+section #ar1
+{
+    background-color: darkmagenta;
+    height: 200px;
+}
+section #ar2
+{
+    background-color: yellow;
+    height: 200px;
+    border: 2px solid black;
+}
+footer
+{
+    background-color: brown;
+    height: 100px;
+}

@@ -1,0 +1,27 @@
+/* 
+#a:visited{
+color: yellow;
+}
+#a:hover{
+    color: red;
+} */
+
+
+*{
+    color: blue;
+}
+
+h1{
+    color: red;
+}
+
+#one{
+    color: gray;
+}
+.two{
+    color: green;
+}
+
+p,h1{
+    font-size: 10px;
+}

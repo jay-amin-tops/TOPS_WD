@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        .link1:link {
+            color: red;
+        }
+
+        .link2:link {
+            background-color: red;
+        }
+
+        .link3:link {
+            color: pink;
+            background-color: black;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .visited1:visited {
+            color: hotpink;
+        }
+
+        .visited2:visited {
+            background-color: royalblue;
+        }
+
+        .active1:active {
+            color: green;
+            background-color: aquamarine;
+        }
+
+        .hover:hover {
+            font-style: normal;
+            color: lightseagreen;
+            background-color: royalblue;
+        }
+
+        .focus:focus {
+            font-style: normal;
+            color: green;
+            border: 2px solid black;
+        }
+
+        .child span:first-child {
+            color: blue;
+        }
+
+        .child span:nth-child(2) {
+            color: red;
+        }
+
+        .child span:last-child {
+            color: yellow;
+        }
+
+        .one::first-line {
+            font-size: 25px;
+        }
+
+        .two::first-letter {
+            color: red;
+            font-size: 25px;
+        }
+
+        .three::selection {
+            background-color: red;
+        }
+
+        ::marker {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Psuedo Class Selector: </h2>
+    <p><b>- Defination: </b>It is used to give style to the class properties of a tag/class. eg. hover, active, link,
+        etc.</p>
+    <p>- It is denoted by class_name/tag:class_Selector</p>
+    <hr>
+
+    <p>- There are two types of psuedo class: <br><br><b>1. Link Psuedo Class: </b>It gives styling to static properties
+        of tags which are based on user previous interactions.</p>
+    <hr>
+    <p>-- Types of Link Pusedo Class: <br><br><b>i. Link: </b>It defines the styling of anchor tag link which not been
+        visited before.</p>
+    <p>-Ex:-<br>Default: <a href="a">Home</a><br>Link selector: <a href="a" class="link3">Home</a></p>
+    <hr>
+    <p><b>ii. Visited:</b> It defines the styling of anchor tag link which is visited atleast onece</p>
+    <p>-Ex:- <br>Default: <a href="#">Home</a><br>Visited selector: <a href="#" class="visited1">Home</a><br></p>
+    <hr>
+    <hr>
+    <p><b>2. Dynamic Pusedo Classes:</b> It gives styling to dynamic properties of tags which are based on user
+        interactions.</p>
+    <p>-- Types of Dynamic Psuedo-class: </p>
+    <p><b>i. Active: </b>It give styling to link when its active pressed.</p>
+    <p>-Ex:- <br>Default: <a href="#">Home</a><br>Active Selector: <a href="#" class="active1">Home</a></p>
+    <hr>
+    <p><b>ii. Hover: </b>It gives styling to an tag whem its hovered over.</p>
+    <p>-Ex:- Default: Home<br>Hover Selector: <i class="hover">Home</i></p>
+    <hr>
+    <p><b>iii. Focus: </b>It gives styling to an tag when its focused.</p>
+    <p>-Ex:- Default: Home<br>Focus: <a href="#" class="focus">Home</a></p>
+    <hr>
+    <p><b>iv. first-child/nth-child/last-child: </b>To give CSS to specific tags without using class or id.</p>
+    <p class="child">-Ex:- <br><span>abc</span><br><span>mno</span><br><span>pqr</span></p>
+    <hr>
+    <hr>
+
+    <h2>Psuedo-elements Selectors:</h2>
+    <p><b>- Defination: </b>It is used to give style to the element properties of a tag/class.</p>
+    <p>- It is denoted by class_name/tag::elements_Selector</p>
+    <p>-- Types of Elements Selector: </p>
+    <p><b>1. fist-line: </b>It gives style to first line of the tag.</p>
+    <p>-Ex:-
+    <p class="one">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi blanditiis molestiae eos porro
+        esse beatae sapiente veritatis reprehenderit explicabo impedit? Dignissimos velit deserunt delectus eos est,
+        labore incidunt! Aspernatur, rerum.</p>
+    </p>
+    <p><b>2. firt-letter: </b>It gives style to first letter of the tag.</p>
+    <p>-Ex:-
+    <p class="two">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero cum hic quia itaque alias facilis illo
+        non dicta et. Aliquam nobis vel minus aperiam libero labore consectetur, fuga dolorum ipsum?</p>
+    </p>
+    <p><b>3. Selection: </b>It gives style to select area of the tag.</p>
+    <p>-Ex:-
+    <p class="three">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci harum eos exercitationem,
+        repudiandae aspernatur, ut minus doloribus ex officia iste ipsa magnam maiores. Aliquid repudiandae odit,
+        delectus necessitatibus neque molestiae.</p>
+    </p>
+    <p><b>4. Marker: </b>It gives style to bulltes and numbers .</p>
+    <p>-Ex:-
+    <p class="four">
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    </p>
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form" method="post" onsubmit="validdata()">
+        <table cellspacing="2" cellpadding="2" border="1">
+          <tr>
+            <td align="right">Username</td>
+            <td><input type="text" id="name" /></td>
+            <span id="name"></span>
+          </tr>
+          <tr>
+            <td align="right">Email Address</td>
+            <td><input type="text" id="email-address" /></td>
+          </tr>1
+          <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" id="submit-btn" /></td>
+          </tr>
+        </table>
+      </form>
+</body>
+</html>
+<script>
+    function validdata()
+    {
+       name = document.getElementById('name').value;
+       console.log(name);
+        // if(name.value == "")
+        // {
+        //   alert("Please Enter Name!");
+         
+        //   return false;
+        // }
+       
+    }
+</script>
